@@ -1,2 +1,2 @@
-# raccoon game
-sned braincells  and spelling sklils merci
+# racc game
+raccoon vs racoon
