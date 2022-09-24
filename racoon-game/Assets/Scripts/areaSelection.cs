@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class areaSelection : MonoBehaviour
+public class AreaSelection : MonoBehaviour
 {
     public void BackToMM()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MenuScene");
+    }
+
+    public void LoadLevel()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
