@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RacoonController : MonoBehaviour
 {
-    public float jumpSpeed = 2f;
+    public float jumpSpeed = 1f;
     public float speed = 2f;
     public float direction = 0f;
     public Rigidbody2D player;
