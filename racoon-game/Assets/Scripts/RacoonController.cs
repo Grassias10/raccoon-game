@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RacoonController : MonoBehaviour
 {
+    public int maxHealth = 1;
+    public int currentHealth;
+
     public float jumpSpeed = 1f;
     public float speed = 2f;
     public float direction = 0f;
@@ -13,6 +16,7 @@ public class RacoonController : MonoBehaviour
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -32,5 +36,11 @@ public class RacoonController : MonoBehaviour
         {
             player.velocity = new Vector2(player.velocity.x, jumpSpeed);
         }
+    }
+
+    public void ChangeHealth(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 }
