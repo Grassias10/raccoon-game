@@ -37,10 +37,4 @@ public class RacoonController : MonoBehaviour
             player.velocity = new Vector2(player.velocity.x, jumpSpeed);
         }
     }
-
-    public void ChangeHealth(int amount)
-    {
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
-    }
 }
